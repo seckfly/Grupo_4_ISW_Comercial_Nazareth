@@ -52,14 +52,14 @@ CU01 incluye CU03. CU02 extiende CU01 cuando el comprador se identifica como cli
 
 ## Reglas del negocio
 
-- RB-01: Yape y Plin se registran como método de pago. El código de operación no confirma el pago bancario.
-- RB-02: la venta usa el precio consultado por el servicio y redondea a dos decimales. El cálculo de descuentos debe coincidir entre interfaz y backend.
-- RB-03: una venta puede registrarse sin cliente asociado.
-- RB-04: una orden de compra no aumenta el stock. El incremento ocurre al confirmar la recepción.
-- RB-05: una solicitud de separación no confirma una venta ni garantiza el bloqueo de existencias.
-- RB-06: la alerta muestra stock menor o igual al mínimo. CU08 puede extender CU06 cuando el stock está por debajo del mínimo y Humberto decide reponer. Si el stock equivale al mínimo, se muestra la alerta, pero esa condición por sí sola no activa CU08.
-- RB-07: los datos del proveedor se guardan en la orden. El proveedor no tiene credenciales ni un caso de uso independiente.
-- RB-08: una recepción parcial mantiene pendiente la orden y acumula cantidades recibidas. Se rechazan referencias duplicadas y cantidades superiores al saldo por recibir.
+- BR-01: Yape y Plin se registran como método de pago. El código de operación no confirma el pago bancario.
+- BR-02: la venta usa el precio consultado por el servicio y redondea a dos decimales. El cálculo de descuentos debe coincidir entre interfaz y backend.
+- BR-03: una venta puede registrarse sin cliente asociado.
+- BR-04: una orden de compra no aumenta el stock. El incremento ocurre al confirmar la recepción.
+- BR-05: una solicitud de separación no confirma una venta ni garantiza el bloqueo de existencias.
+- BR-06: la alerta muestra stock menor o igual al mínimo. CU08 puede extender CU06 cuando el stock está por debajo del mínimo y Humberto decide reponer. Si el stock equivale al mínimo, se muestra la alerta, pero esa condición por sí sola no activa CU08.
+- BR-07: los datos del proveedor se guardan en la orden. El proveedor no tiene credenciales ni un caso de uso independiente.
+- BR-08: una recepción parcial mantiene pendiente la orden y acumula cantidades recibidas. Se rechazan referencias duplicadas y cantidades superiores al saldo por recibir.
 
 ## Trazabilidad y evidencia
 
